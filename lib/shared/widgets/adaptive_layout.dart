@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../core/utils/extensions/context_extension.dart';
 
 /// Renders different widget trees based on device screen breakpoint.
 class ResponsiveLayout extends StatelessWidget {
@@ -47,7 +46,9 @@ class AdaptiveMaxWidthContainer extends StatelessWidget {
     return Center(
       child: ConstrainedBox(
         constraints: BoxConstraints(maxWidth: maxWidth),
-        child: padding != null ? Padding(padding: padding!, child: child) : child,
+        child: padding != null
+            ? Padding(padding: padding!, child: child)
+            : child,
       ),
     );
   }
