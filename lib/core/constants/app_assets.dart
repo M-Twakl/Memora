@@ -9,6 +9,17 @@ abstract class AppAssets {
   static const String memoraLogoBase = '$svgsPath/memora_logo_base.svg';
   static const String splashLogo = '$imagesPath/splash_logo.png';
 
+  // Auth & Login Icons
+  static const String icIdCard = '$iconsPath/ic_id_card.svg';
+  static const String icMail = '$iconsPath/ic_mail.svg';
+  static const String icLock = '$iconsPath/ic_lock.svg';
+  static const String icEye = '$iconsPath/ic_eye.svg';
+  static const String icApple = '$iconsPath/ic_apple.svg';
+  static const String icFacebook = '$iconsPath/ic_facebook.svg';
+  static const String icGoogle = '$iconsPath/ic_google.svg';
+  static const String icCircleAlert = '$iconsPath/ic_circle_alert.svg';
+  static const String icVerifiedBadge = '$iconsPath/ic_verified_badge.svg';
+
   // Static Full Onboarding Illustrations
   static const String onboardingIllustration1 = '$svgsPath/onboarding_illustration_1.svg';
   static const String onboardingIllustration2 = '$svgsPath/onboarding_illustration_2.svg';

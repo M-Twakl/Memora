@@ -66,7 +66,7 @@ class _OnboardingViewState extends State<OnboardingView> {
   }
 
   void _completeOnboarding() {
-    context.go(AppRoutes.login);
+    context.go(AppRoutes.authGateway);
   }
 
   @override

@@ -28,4 +28,16 @@ abstract class AppColors {
   // Borders & Dividers
   static const Color borderLight = Color(0xFFE2E8F0);
   static const Color divider = Color(0xFFF1F5F9);
+
+  // Auth Form Palette
+  static const Color inputBorder = Color(0xFFD9D9D9);
+  static const Color inputHint = Color(0xFFB0B2B2);
+  static const Color inputIcon = Color(0xFFB0B2B2);
+  static const Color socialButtonBackground = Color(0xFFFBFBFB);
+  static const Color dividerLine = Color(0xFFB0B2B2);
+
+  // Auth Notices & States (Figma Frames 1:908 & 1:954)
+  static const Color errorRed = Color(0xFFD22B2B);
+  static const Color errorBackground = Color(0xFFFFF4F3);
+  static const Color submittingText = Color(0xFF828282);
 }

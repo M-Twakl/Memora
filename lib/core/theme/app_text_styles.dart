@@ -86,4 +86,110 @@ abstract class AppTextStyles {
         fontWeight: FontWeight.w300,
         color: AppColors.textSkip,
       );
+
+  // Welcome / Auth Gateway Typography
+  static TextStyle get welcomeTagline => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppColors.black,
+        height: 1.5,
+      );
+
+  // Login Screen Typography
+  static TextStyle get loginTitle => GoogleFonts.alexandria(
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+        color: AppColors.textOnboardingDark,
+        height: 1.2,
+      );
+
+  static TextStyle get loginSubtitle => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w300,
+        color: AppColors.textOnboardingDark,
+        height: 1.4,
+      );
+
+  static TextStyle get inputLabel => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppColors.textOnboardingDark,
+      );
+
+  static TextStyle get inputHint => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w300,
+        color: AppColors.inputHint,
+      );
+
+  static TextStyle get inputText => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppColors.textOnboardingDark,
+      );
+
+  static TextStyle get forgotPassword => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        color: AppColors.textOnboardingDark,
+      );
+
+  static TextStyle get orDividerText => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w300,
+        color: AppColors.black,
+      );
+
+  static TextStyle get socialButtonText => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppColors.textOnboardingDark,
+      );
+
+  static TextStyle get dontHaveAccountText => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w300,
+        color: AppColors.textOnboardingDark,
+      );
+
+  static TextStyle get registerLink => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppColors.primaryBlue,
+      );
+
+  // Auth States & Notices
+  static TextStyle get invalidCredentialsNotice => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        color: AppColors.errorRed,
+        height: 1.33,
+      );
+
+  static TextStyle get submittingGuidance => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        color: AppColors.submittingText,
+        height: 1.33,
+      );
+
+  static TextStyle get verifyCodeTimer => GoogleFonts.alexandria(
+        fontSize: 24,
+        fontWeight: FontWeight.w700,
+        color: AppColors.textOnboardingDark,
+      );
+
+  // Done / Verified Screen (Figma Frame 1:897)
+  static TextStyle get verifiedTitle => GoogleFonts.alexandria(
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+        color: AppColors.textOnboardingDark,
+      );
+
+  static TextStyle get verifiedSubtitle => GoogleFonts.alexandria(
+        fontSize: 16,
+        fontWeight: FontWeight.w300,
+        color: AppColors.textOnboardingDark,
+        height: 1.5,
+      );
 }

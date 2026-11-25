@@ -28,22 +28,25 @@ class ResponsiveLayout extends StatelessWidget {
   }
 }
 
-/// Wraps widgets with a maximum width constraint, centered on larger screens (Tablet/Desktop/Web).
+/// Wraps widgets with a maximum width constraint, centered horizontally on larger screens (Tablet/Desktop/Web).
 class AdaptiveMaxWidthContainer extends StatelessWidget {
   final Widget child;
   final double maxWidth;
   final EdgeInsetsGeometry? padding;
+  final AlignmentGeometry alignment;
 
   const AdaptiveMaxWidthContainer({
     super.key,
     required this.child,
     this.maxWidth = 600,
     this.padding,
+    this.alignment = Alignment.topCenter,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Align(
+      alignment: alignment,
       child: ConstrainedBox(
         constraints: BoxConstraints(maxWidth: maxWidth),
         child: padding != null
