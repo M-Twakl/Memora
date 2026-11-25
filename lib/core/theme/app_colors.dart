@@ -19,6 +19,12 @@ abstract class AppColors {
   static const Color textSecondary = Color(0xFF64748B);
   static const Color textMuted = Color(0xFF94A3B8);
 
+  // Onboarding Specific Palette
+  static const Color textOnboardingDark = Color(0xFF00000E);
+  static const Color textSkip = Color(0x8000000E);
+  static const Color dotInactive = Color(0xFFB0B2B2);
+  static const Color dotActive = Color(0xFF047DF2);
+
   // Borders & Dividers
   static const Color borderLight = Color(0xFFE2E8F0);
   static const Color divider = Color(0xFFF1F5F9);

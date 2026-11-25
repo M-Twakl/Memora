@@ -6,5 +6,9 @@ void main() {
   testWidgets('MemoraApp initializes and renders SplashView', (WidgetTester tester) async {
     await tester.pumpWidget(const MemoraApp());
     expect(find.byType(SplashView), findsOneWidget);
+    // Drain splash sequence timers to prevent pending timer assertion
+    for (int i = 0; i < 40; i++) {
+      await tester.pump(const Duration(milliseconds: 100));
+    }
   });
 }
