@@ -84,9 +84,7 @@ class _LoginViewState extends State<LoginView> {
   }
 
   void _onForgotPasswordPressed() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Forgot password navigation')),
-    );
+    context.push(AppRoutes.forgotPassword);
   }
 
   void _onRegisterPressed() {

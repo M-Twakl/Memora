@@ -3,7 +3,9 @@ import 'package:go_router/go_router.dart';
 import 'package:memora/core/router/app_routes.dart';
 import 'package:memora/features/auth/presentation/views/auth_done_view.dart';
 import 'package:memora/features/auth/presentation/views/auth_gateway_view.dart';
+import 'package:memora/features/auth/presentation/views/forgot_password_view.dart';
 import 'package:memora/features/auth/presentation/views/login_view.dart';
+import 'package:memora/features/auth/presentation/views/new_password_view.dart';
 import 'package:memora/features/auth/presentation/views/verify_code_view.dart';
 import 'package:memora/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:memora/features/splash/presentation/views/splash_view.dart';
@@ -42,8 +44,23 @@ class AppRouter {
         builder: (context, state) => const LoginView(),
       ),
       GoRoute(
+        path: AppRoutes.forgotPassword,
+        builder: (context, state) => const ForgotPasswordView(),
+      ),
+      GoRoute(
+        path: AppRoutes.newPassword,
+        builder: (context, state) => const NewPasswordView(),
+      ),
+      GoRoute(
         path: AppRoutes.verifyCode,
-        builder: (context, state) => const VerifyCodeView(),
+        builder: (context, state) {
+          final fromForgot = state.uri.queryParameters['from'] == 'forgot';
+          return VerifyCodeView(
+            onVerified: fromForgot
+                ? () => context.push(AppRoutes.newPassword)
+                : null,
+          );
+        },
       ),
       GoRoute(
         path: AppRoutes.authDone,

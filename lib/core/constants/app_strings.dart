@@ -45,6 +45,23 @@ abstract class AppStrings {
   static const String dontHaveAccount = 'Don’t have an account?';
   static const String registerLink = 'Register';
 
+  // Forgot Password Screen (Figma Frame 1:1085)
+  static const String forgotPasswordTitle = 'forgot password';
+  static const String forgotPasswordSubtitle =
+      'We need your E-mail so we can send you the password reset code.';
+  static const String sendCode = 'send code';
+
+  // Create New Password Screen (Figma Frames 1:1006 & 1:1157)
+  static const String createPasswordTitle = 'create password';
+  static const String createPasswordSubtitle =
+      'The password should have at least 6 characters .';
+  static const String confirmPassword = 'Confirm Password';
+  static const String createNewPassword = 'create new password';
+  static const String passwordsDoNotMatch =
+      'Passwords don’t match. Re-enter the same password.';
+  static const String enterConfirmPassword =
+      'Please confirm your password';
+
   // Validation Messages
   static const String enterNationalId = 'Please enter your National ID';
   static const String invalidNationalId =
@@ -79,14 +96,29 @@ abstract class AppStrings {
   static const String tryAgain = 'Try Again';
   static const String logInSubmitting = 'log in...';
 
-  // Verify Code Screen (Figma Frame 1:876)
+  // Verify Code Screen (Figma Frames 1:876, 1:1099, 1:1037, 1:1126)
   static const String verifyCodeTitle = 'Verify Code';
   static const String verifyCodeSubtitle =
       'You need to enter 5-digit code we send to your e-mail.';
   static const String verify = 'verify';
   static const String timerInitial = '00:59';
+  static const String timerZero = '00:00';
   static const String didntReceiveCode = 'Didn’t receive the code?';
   static const String resend = 'Resend';
+  static const String codeDoesNotMatch =
+      'The code doesn’t match. Check all five digits and try again.';
+  static const String codeExpiresGuidance =
+      'Code expires in minutes : seconds';
+  static const String codeExpiredMessage =
+      'This code has expired. Resend to get a new code.';
+  static const String codeExpiredGuidance =
+      'Code expired · Request a new code';
+  static const String newCodeSentNotice =
+      'A new code has been sent to your e-mail.';
+  static const String enterNewCodeGuidance =
+      'Enter the new five-digit code.';
+  static const String resendCooldownGuidance =
+      'You can resend when the countdown ends.';
 
   // Done / Verified Screen (Figma Frame 1:897)
   static const String verifiedTitle = 'Verified !';

@@ -36,8 +36,10 @@ abstract class AppColors {
   static const Color socialButtonBackground = Color(0xFFFBFBFB);
   static const Color dividerLine = Color(0xFFB0B2B2);
 
-  // Auth Notices & States (Figma Frames 1:908 & 1:954)
+  // Auth Notices & States (Figma Frames 1:908 & 1:954 & 1:1126)
   static const Color errorRed = Color(0xFFD22B2B);
   static const Color errorBackground = Color(0xFFFFF4F3);
+  static const Color infoBackground = Color(0xFFEFF8FF);
   static const Color submittingText = Color(0xFF828282);
+  static const Color disabledButton = Color(0xFFD9D9D9);
 }

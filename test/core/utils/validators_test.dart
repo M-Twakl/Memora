@@ -104,4 +104,28 @@ void main() {
       expect(AppValidators.validatePassword('A1b2c3d\$'), isNull); // 8 chars
     });
   });
+
+  group('AppValidators - New Password & Confirm Password (Figma Frame 1:1157)', () {
+    test('validateNewPassword under 6 chars returns dynamic notice', () {
+      expect(AppValidators.validateNewPassword('Pass'), 'Use at least 6 characters. You’ve entered 4.');
+      expect(AppValidators.validateNewPassword('P@s12'), 'Use at least 6 characters. You’ve entered 5.');
+    });
+
+    test('validateNewPassword valid password returns null', () {
+      expect(AppValidators.validateNewPassword('P@ss12'), isNull);
+    });
+
+    test('validateConfirmPassword empty returns enterConfirmPassword error', () {
+      expect(AppValidators.validateConfirmPassword(null, 'P@ss12'), AppStrings.enterConfirmPassword);
+      expect(AppValidators.validateConfirmPassword('', 'P@ss12'), AppStrings.enterConfirmPassword);
+    });
+
+    test('validateConfirmPassword mismatch returns passwordsDoNotMatch error', () {
+      expect(AppValidators.validateConfirmPassword('Different1!', 'P@ss12'), AppStrings.passwordsDoNotMatch);
+    });
+
+    test('validateConfirmPassword matching returns null', () {
+      expect(AppValidators.validateConfirmPassword('P@ss12', 'P@ss12'), isNull);
+    });
+  });
 }

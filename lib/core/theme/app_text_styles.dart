@@ -179,6 +179,39 @@ abstract class AppTextStyles {
         color: AppColors.textOnboardingDark,
       );
 
+  static TextStyle get verifyCodeTimerExpired => GoogleFonts.alexandria(
+        fontSize: 24,
+        fontWeight: FontWeight.w700,
+        color: AppColors.submittingText,
+      );
+
+  static TextStyle get verifyErrorMessage => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        color: AppColors.errorRed,
+        height: 1.33,
+      );
+
+  static TextStyle get verifyGuidance => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w300,
+        color: AppColors.submittingText,
+        height: 1.33,
+      );
+
+  static TextStyle get resendNoticeText => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        color: AppColors.primaryBlue,
+        height: 1.33,
+      );
+
+  static TextStyle get resendCooldownText => GoogleFonts.alexandria(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        color: AppColors.submittingText,
+      );
+
   // Done / Verified Screen (Figma Frame 1:897)
   static TextStyle get verifiedTitle => GoogleFonts.alexandria(
         fontSize: 20,

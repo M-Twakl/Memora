@@ -18,6 +18,7 @@ abstract class AppAssets {
   static const String icFacebook = '$iconsPath/ic_facebook.svg';
   static const String icGoogle = '$iconsPath/ic_google.svg';
   static const String icCircleAlert = '$iconsPath/ic_circle_alert.svg';
+  static const String icInfoCircle = '$iconsPath/ic_info_circle.svg';
   static const String icVerifiedBadge = '$iconsPath/ic_verified_badge.svg';
 
   // Static Full Onboarding Illustrations

@@ -51,7 +51,7 @@ class CustomButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(borderRadius),
             side: border ?? BorderSide.none,
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
         ),
         child: isLoading
             ? SizedBox(
@@ -70,10 +70,16 @@ class CustomButton extends StatelessWidget {
                     icon!,
                     const SizedBox(width: 8),
                   ],
-                  Text(
-                    text,
-                    style: effectiveTextStyle,
-                    textAlign: TextAlign.center,
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        text,
+                        style: effectiveTextStyle,
+                        textAlign: TextAlign.center,
+                        maxLines: 1,
+                      ),
+                    ),
                   ),
                 ],
               ),

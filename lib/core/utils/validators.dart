@@ -122,6 +122,48 @@ abstract class AppValidators {
     }
     return null;
   }
+
+  /// Validates New Password (matching Figma Frame 1:1157):
+  /// - Minimum 6 characters (up to 10 characters)
+  /// - Dynamic length notice: "Use at least 6 characters. You’ve entered X."
+  /// - Requires uppercase, lowercase, number, and special character
+  static String? validateNewPassword(String? value) {
+    if (value == null || value.isEmpty) {
+      return AppStrings.enterPassword;
+    }
+    if (value.length < 6) {
+      return 'Use at least 6 characters. You’ve entered ${value.length}.';
+    }
+    if (value.length > 10) {
+      return AppStrings.passwordLength;
+    }
+    if (!uppercaseRegex.hasMatch(value)) {
+      return AppStrings.passwordUppercase;
+    }
+    if (!lowercaseRegex.hasMatch(value)) {
+      return AppStrings.passwordLowercase;
+    }
+    if (!digitRegex.hasMatch(value)) {
+      return AppStrings.passwordNumber;
+    }
+    if (!specialCharRegex.hasMatch(value)) {
+      return AppStrings.passwordSpecialChar;
+    }
+    return null;
+  }
+
+  /// Validates Confirm Password (matching Figma Frame 1:1157):
+  /// - Must not be empty
+  /// - Must exactly match originalPassword
+  static String? validateConfirmPassword(String? value, String? originalPassword) {
+    if (value == null || value.isEmpty) {
+      return AppStrings.enterConfirmPassword;
+    }
+    if (value != originalPassword) {
+      return AppStrings.passwordsDoNotMatch;
+    }
+    return null;
+  }
 }
 
 /// Convenience alias for [AppValidators].
