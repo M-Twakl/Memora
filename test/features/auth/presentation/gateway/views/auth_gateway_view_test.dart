@@ -3,9 +3,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:memora/core/constants/app_strings.dart';
 import 'package:memora/core/router/app_routes.dart';
-import 'package:memora/features/auth/presentation/views/auth_gateway_view.dart';
-import 'package:memora/features/auth/presentation/views/widgets/welcome_actions_section.dart';
-import 'package:memora/features/auth/presentation/views/widgets/welcome_brand_header.dart';
+import 'package:memora/features/auth/presentation/gateway/views/auth_gateway_view.dart';
+import 'package:memora/features/auth/presentation/gateway/widgets/welcome_actions_section.dart';
+import 'package:memora/features/auth/presentation/gateway/widgets/welcome_brand_header.dart';
 import 'package:memora/shared/widgets/custom_button.dart';
 
 void main() {

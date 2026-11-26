@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:memora/core/constants/app_strings.dart';
-import 'package:memora/features/auth/presentation/views/auth_done_view.dart';
+import 'package:memora/features/auth/presentation/shared/views/auth_done_view.dart';
 import 'package:memora/shared/widgets/custom_button.dart';
 
 void main() {

@@ -3,8 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:memora/core/router/app_routes.dart';
 import 'package:memora/core/theme/app_colors.dart';
 import 'package:memora/shared/widgets/adaptive_layout.dart';
-import 'widgets/welcome_actions_section.dart';
-import 'widgets/welcome_brand_header.dart';
+import '../widgets/welcome_actions_section.dart';
+import '../widgets/welcome_brand_header.dart';
 
 /// Full-screen Welcome Gateway View ("have an account" in Figma).
 /// Presents the central brand identity and entry points to either login or register.

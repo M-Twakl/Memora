@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:memora/core/constants/app_strings.dart';
-import 'package:memora/features/auth/presentation/views/verify_code_view.dart';
+import 'package:memora/features/auth/presentation/verification/views/verify_code_view.dart';
 import 'package:memora/shared/widgets/custom_button.dart';
 
 void main() {

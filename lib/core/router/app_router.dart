@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:memora/core/router/app_routes.dart';
-import 'package:memora/features/auth/presentation/views/auth_done_view.dart';
-import 'package:memora/features/auth/presentation/views/auth_gateway_view.dart';
-import 'package:memora/features/auth/presentation/views/forgot_password_view.dart';
-import 'package:memora/features/auth/presentation/views/login_view.dart';
-import 'package:memora/features/auth/presentation/views/new_password_view.dart';
-import 'package:memora/features/auth/presentation/views/verify_code_view.dart';
+import 'package:memora/features/auth/presentation/forgot_password/views/forgot_password_view.dart';
+import 'package:memora/features/auth/presentation/forgot_password/views/new_password_view.dart';
+import 'package:memora/features/auth/presentation/gateway/views/auth_gateway_view.dart';
+import 'package:memora/features/auth/presentation/login/views/login_view.dart';
+import 'package:memora/features/auth/presentation/shared/views/auth_done_view.dart';
+import 'package:memora/features/auth/presentation/verification/views/verify_code_view.dart';
 import 'package:memora/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:memora/features/splash/presentation/views/splash_view.dart';
 
