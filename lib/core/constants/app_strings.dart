@@ -45,6 +45,27 @@ abstract class AppStrings {
   static const String dontHaveAccount = 'Don’t have an account?';
   static const String registerLink = 'Register';
 
+  // Registration Screen (Figma Frames 1:1184 & 1:1650)
+  static const String createYourAccount = 'Create your account';
+  static const String fullName = 'Full Name';
+  static const String enterFullName = 'Please enter your full name';
+  static const String invalidFullName = 'Please enter your first and last name';
+  static const String passwordMinLengthPlaceholder = 'at least 6 characters';
+  static const String continueButton = 'continue';
+  static const String haveAnAccount = 'Have an account?';
+  static const String logInLink = 'Log In';
+  static const String requiredFieldsNotice =
+      'Complete the required fields below to continue.';
+  static const String enterNationalIdNotice = 'Enter your national ID.';
+  static const String confirmPasswordNotice =
+      'Confirm your password to continue.';
+
+  // Persona Screen (Figma Frame 1:1278)
+  static const String personaTitle = 'How will you use Memora?';
+  static const String personaSubtitle = 'Select your role to continue.';
+  static const String patientRole = 'Patient';
+  static const String doctorRole = 'Doctor';
+
   // Forgot Password Screen (Figma Frame 1:1085)
   static const String forgotPasswordTitle = 'forgot password';
   static const String forgotPasswordSubtitle =

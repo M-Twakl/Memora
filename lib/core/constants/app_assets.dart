@@ -9,6 +9,9 @@ abstract class AppAssets {
   static const String memoraLogoBase = '$svgsPath/memora_logo_base.svg';
   static const String splashLogo = '$imagesPath/splash_logo.png';
 
+  // Navigation Icons
+  static const String icBack = '$iconsPath/ic_back.svg';
+
   // Auth & Login Icons
   static const String icIdCard = '$iconsPath/ic_id_card.svg';
   static const String icMail = '$iconsPath/ic_mail.svg';

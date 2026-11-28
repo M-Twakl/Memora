@@ -5,6 +5,8 @@ import 'package:memora/features/auth/presentation/forgot_password/views/forgot_p
 import 'package:memora/features/auth/presentation/forgot_password/views/new_password_view.dart';
 import 'package:memora/features/auth/presentation/gateway/views/auth_gateway_view.dart';
 import 'package:memora/features/auth/presentation/login/views/login_view.dart';
+import 'package:memora/features/auth/presentation/persona/views/persona_view.dart';
+import 'package:memora/features/auth/presentation/register/views/register_view.dart';
 import 'package:memora/features/auth/presentation/shared/views/auth_done_view.dart';
 import 'package:memora/features/auth/presentation/verification/views/verify_code_view.dart';
 import 'package:memora/features/onboarding/presentation/views/onboarding_view.dart';
@@ -68,9 +70,11 @@ class AppRouter {
       ),
       GoRoute(
         path: AppRoutes.register,
-        builder: (context, state) => const Scaffold(
-          body: Center(child: Text('Register View')),
-        ),
+        builder: (context, state) => const RegisterView(),
+      ),
+      GoRoute(
+        path: AppRoutes.persona,
+        builder: (context, state) => const PersonaView(),
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

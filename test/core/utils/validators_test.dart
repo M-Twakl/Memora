@@ -3,6 +3,24 @@ import 'package:memora/core/constants/app_strings.dart';
 import 'package:memora/core/utils/validators.dart';
 
 void main() {
+  group('AppValidators - Full Name', () {
+    test('Empty or null returns enterFullName error', () {
+      expect(AppValidators.validateFullName(null), AppStrings.enterFullName);
+      expect(AppValidators.validateFullName(''), AppStrings.enterFullName);
+      expect(AppValidators.validateFullName('   '), AppStrings.enterFullName);
+    });
+
+    test('Single word or short names return invalidFullName error', () {
+      expect(AppValidators.validateFullName('Noah'), AppStrings.invalidFullName);
+      expect(AppValidators.validateFullName('N H'), AppStrings.invalidFullName);
+    });
+
+    test('Valid full name returns null', () {
+      expect(AppValidators.validateFullName('Noah Hassan'), isNull);
+      expect(AppValidators.validateFullName('Mohamed Twakl Ahmed'), isNull);
+    });
+  });
+
   group('AppValidators - National ID', () {
     test('Empty or null returns enterNationalId error', () {
       expect(AppValidators.validateNationalId(null), AppStrings.enterNationalId);

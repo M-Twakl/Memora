@@ -14,6 +14,21 @@ abstract class AppValidators {
   static final RegExp digitRegex = RegExp(r'[0-9]');
   static final RegExp specialCharRegex = RegExp(r'[^a-zA-Z0-9]');
 
+  /// Validates Full Name:
+  /// - Non-empty
+  /// - At least 2 words (e.g. "Noah Hassan" as in Figma 1:1659)
+  static String? validateFullName(String? value) {
+    if (value == null || value.trim().isEmpty) {
+      return AppStrings.enterFullName;
+    }
+    final trimmed = value.trim();
+    final words = trimmed.split(RegExp(r'\s+'));
+    if (words.length < 2 || words.any((w) => w.length < 2)) {
+      return AppStrings.invalidFullName;
+    }
+    return null;
+  }
+
   /// Validates Egyptian National ID:
   /// - Exactly 14 digits
   /// - Numeric only

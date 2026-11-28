@@ -159,6 +159,13 @@ abstract class AppTextStyles {
       );
 
   // Auth States & Notices
+  static TextStyle get registrationErrorBanner => GoogleFonts.alexandria(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        color: AppColors.errorRed,
+        height: 1.33,
+      );
+
   static TextStyle get invalidCredentialsNotice => GoogleFonts.alexandria(
         fontSize: 12,
         fontWeight: FontWeight.w400,
